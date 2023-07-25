@@ -7,35 +7,35 @@ import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-nativ
 export default function Features() {
   return (
     <ScrollView style={{height: hp(60)}} bounces={false} showsVerticalScrollIndicator={false} className="space-y-4">
-        <Text style={{fontSize: wp(6.5)}} className="font-semibold text-gray-700">Features</Text>
-        <View className="bg-emerald-200 p-4 rounded-xl space-y-2">
+        <Text style={{fontSize: wp(6.5)}} className="font-semibold text-center text-gray-700">Cuddle can help with:</Text>
+        <View className="bg-base p-4 rounded-xl space-y-2">
             <View className="flex-row items-center space-x-1">
-                <Image className="rounded-ful" source={require('../../assets/images/chatgptIcon.png')} style={{height: hp(4), width: hp(4)}} />
-                <Text style={{fontSize: wp(4.8)}} className="font-semibold text-gray-700">ChatGPT</Text>
+            <Text style={{ fontSize: hp(2.5)}}>🍼</Text>
+                <Text style={{fontSize: wp(4.8)}} className="font-semibold text-gray-700">Nutrition & Feeding</Text>
             </View>
             
             <Text style={{fontSize: wp(3.8)}} className="text-gray-700 font-medium">
-                ChatGPT can provide you with instant and knowledgeable responses, assist you with creative ideas on a wide range of topics.
+            Expert guidance on feeding your newborn with Cuddle. From breastfeeding to formula feeding and introducing solids, we'll help you establish healthy feeding routines.
             </Text>
         </View>
-        <View className="bg-purple-200 p-4 rounded-xl space-y-2">
+        <View className="bg-base p-4 rounded-xl space-y-2">
             <View className="flex-row items-center space-x-1">
-                <Image className="rounded-ful" source={require('../../assets/images/dalleIcon.png')} style={{height: hp(4), width: hp(4)}} />
-                <Text style={{fontSize: wp(4.8)}} className="font-semibold text-gray-700">DALL-E</Text>
+                <Text style={{ fontSize: hp(2.5)}}>👩‍🍼</Text>
+                <Text style={{fontSize: wp(4.8)}} className="font-semibold text-gray-700">Bath & Changing</Text>
             </View>
             
             <Text style={{fontSize: wp(3.8)}} className="text-gray-700 font-medium">
-                DALL-E can generate imaginative and diverse images from textual descriptions, expanding the boundaries of visual creativity.
+            Ensure bath time and nappy changing are safe and enjoyable with Cuddle. Our step-by-step instructions and tips will keep your baby comfortable and protected.
             </Text>
         </View>
-        <View className="bg-cyan-200 p-4 rounded-xl space-y-2">
+        <View className="bg-base p-4 rounded-xl space-y-2">
             <View className="flex-row items-center space-x-1">
-                <Image className="rounded-ful" source={require('../../assets/images/smartaiIcon.png')} style={{height: hp(4), width: hp(4)}} />
-                <Text style={{fontSize: wp(4.8)}} className="font-semibold text-gray-700">Smart AI</Text>
+                <Text style={{ fontSize: hp(2.5)}}>😴</Text>
+                <Text style={{fontSize: wp(4.8)}} className="font-semibold text-gray-700">Sleep & Sensory</Text>
             </View>
             
             <Text style={{fontSize: wp(3.8)}} className="text-gray-700 font-medium">
-                A powerful voice assistant with the abilities of ChatGPT and Dall-E, providing you the best of both worlds.
+            Rest easy as Cuddle provides sleep support for your little one. Discover helpful advice for creating a soothing sleep environment and addressing challenges. 
             </Text>
         </View>
     </ScrollView>

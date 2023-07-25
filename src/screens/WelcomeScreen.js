@@ -9,10 +9,10 @@ export default function WelcomeScreen() {
     <SafeAreaView className="flex-1 flex justify-around bg-primary">
         {/* title */}
         <View className="space-y-2">
-            <Text style={{fontSize: wp(10)}} className="text-center font-bold text-gray-700">
+            <Text style={{fontSize: wp(10)}} className="text-center font-bold text-accenttwo">
                 Cuddle
             </Text>
-            <Text style={{fontSize: wp(4)}} className="text-center tracking-wider font-semibold text-gray-600">
+            <Text style={{fontSize: wp(4)}} className="text-center tracking-wider font-semibold text-accenttwo">
                 The AI Powered super nanny is here.
             </Text>
         </View>
@@ -26,7 +26,7 @@ export default function WelcomeScreen() {
         </View>
         
         {/* start button */}
-        <TouchableOpacity onPress={()=> navigation.navigate('Home')} className="bg-emerald-600 mx-5 p-4 rounded-2xl">
+        <TouchableOpacity onPress={()=> navigation.navigate('Home')} className="bg-accenttwo mx-5 p-4 rounded-2xl">
             <Text style={{fontSize: wp(6)}} className="text-center font-bold text-white">
                 Get Started
             </Text>

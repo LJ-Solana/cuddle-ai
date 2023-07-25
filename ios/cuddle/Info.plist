@@ -54,9 +54,9 @@
 
 	<!-- voice -->
 	<key>NSMicrophoneUsageDescription</key>
-	<string>Description of why you require the use of the microphone</string>
+	<string>We need microphone access so you can ask us your questions!</string>
 	<key>NSSpeechRecognitionUsageDescription</key>
-	<string>Description of why you require the use of the speech recognition</string>
+	<string>We need speech recognition access so we know it's you!</string>
 	<!-- voice -->
 </dict>
 </plist>

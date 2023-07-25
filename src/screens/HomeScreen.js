@@ -148,7 +148,7 @@ const App = () => {
 
 
   return (
-    <View className="flex-1 bg-white">
+    <View className="flex-1 bg-primary">
       {/* <StatusBar barStyle="dark-content" /> */}
       <SafeAreaView className="flex-1 flex mx-5">
         {/* bot icon */}
