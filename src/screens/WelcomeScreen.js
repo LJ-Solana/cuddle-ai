@@ -6,14 +6,14 @@ import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-nativ
 export default function WelcomeScreen() {
     const navigation = useNavigation();
   return (
-    <SafeAreaView className="flex-1 flex justify-around bg-white">
+    <SafeAreaView className="flex-1 flex justify-around bg-primary">
         {/* title */}
         <View className="space-y-2">
             <Text style={{fontSize: wp(10)}} className="text-center font-bold text-gray-700">
-                Jarvis
+                Cuddle
             </Text>
             <Text style={{fontSize: wp(4)}} className="text-center tracking-wider font-semibold text-gray-600">
-                The future is here, powerd by AI.
+                The AI Powered super nanny is here.
             </Text>
         </View>
         

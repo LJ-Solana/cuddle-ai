@@ -93,9 +93,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.reactnativeai"
+    namespace "com.cuddle"
     defaultConfig {
-        applicationId "com.reactnativeai"
+        applicationId "com.cuddle"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

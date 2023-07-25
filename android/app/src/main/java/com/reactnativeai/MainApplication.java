@@ -1,4 +1,4 @@
-package com.reactnativeai;
+package com.cuddle;
 
 import android.app.Application;
 import com.facebook.react.PackageList;
