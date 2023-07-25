@@ -6,7 +6,7 @@ import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-nativ
 export default function WelcomeScreen() {
     const navigation = useNavigation();
   return (
-    <SafeAreaView className="flex-1 flex justify-around bg-primary">
+    <SafeAreaView className="flex-1 flex justify-around bg-main">
         {/* title */}
         <View className="space-y-2">
             <Text style={{fontSize: wp(10)}} className="text-center font-bold text-accenttwo">

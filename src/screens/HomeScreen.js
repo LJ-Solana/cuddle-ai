@@ -148,7 +148,7 @@ const App = () => {
 
 
   return (
-    <View className="flex-1 bg-primary">
+    <View className="flex-1 bg-main">
       {/* <StatusBar barStyle="dark-content" /> */}
       <SafeAreaView className="flex-1 flex mx-5">
         {/* bot icon */}
@@ -167,7 +167,7 @@ const App = () => {
         
               <View 
                 style={{height: hp(58)}} 
-                className="bg-neutral-200 rounded-3xl p-4">
+                className="bg-base rounded-3xl p-4">
                   <ScrollView  
                     ref={scrollViewRef} 
                     bounces={false} 
@@ -212,7 +212,7 @@ const App = () => {
                             <View key={index} className="flex-row justify-end">
                               <View 
                                 style={{width: wp(70)}} 
-                                className="bg-white p-2 rounded-xl rounded-tr-none">
+                                className="bg-priimary p-2 rounded-xl rounded-tr-none">
                                 <Text style={{fontSize: wp(4)}}  >
                                   {message.content}
                                 </Text>
