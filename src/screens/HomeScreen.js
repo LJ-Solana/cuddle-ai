@@ -138,17 +138,14 @@ const App = () => {
     Tts.addEventListener('tts-finish', event => {console.log('finish', event); setSpeaking(false)});
     Tts.addEventListener('tts-cancel', event => console.log('cancel', event));
 
-    
-    
     return () => {
       // destroy the voice instance after component unmounts
       Voice.destroy().then(Voice.removeAllListeners);
     };
   }, []);
 
-
   return (
-    <View className="flex-1 bg-main">
+    <View className="flex-1 bg-white">
       {/* <StatusBar barStyle="dark-content" /> */}
       <SafeAreaView className="flex-1 flex mx-5">
         {/* bot icon */}

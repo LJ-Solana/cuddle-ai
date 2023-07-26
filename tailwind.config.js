@@ -7,9 +7,9 @@ module.exports = {
         // Add your custom background colors here
         // Example colors:
         base: '#F8C35A',
-        main: '#FCE4B4',
-        accentone: '#5AEDF8',
-        accenttwo: '#845AF8',
+        feature1: '#FF1D58',
+        feature2: '#FFF685',
+        feature3: '#0049B7',
         // You can also use different color variants like shades and tints
       }
     }
