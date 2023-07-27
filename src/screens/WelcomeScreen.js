@@ -14,7 +14,7 @@ export default function WelcomeScreen() {
           Cuddle
         </Text>
         <Text style={{ fontSize: wp(4), textAlign: 'center', fontWeight: '600', color: 'blue' }}>
-          The AI Powered super nanny is here.
+          Your on-the-go pocket nanny.
         </Text>
       </View>
 
@@ -26,6 +26,23 @@ export default function WelcomeScreen() {
         />
       </View>
 
+         {/* start button */}
+         <TouchableOpacity
+        onPress={() => navigation.navigate('Home')}
+        style={{
+          marginHorizontal: wp(5),
+          paddingVertical: wp(4),
+          paddingHorizontal: wp(8),
+          borderRadius: wp(20),
+          marginBottom: wp(-20), 
+          backgroundColor: 'blue',
+        }}
+      >
+        <Text style={{ fontSize: wp(4), textAlign: 'center', fontWeight: 'bold', color: 'white' }}>
+          Get Started Free (10 Questions)
+        </Text>
+      </TouchableOpacity>
+
       {/* Go Premium */}
       <TouchableOpacity
         onPress={() => navigation.navigate('Home')}
@@ -34,30 +51,14 @@ export default function WelcomeScreen() {
           paddingVertical: wp(4),
           paddingHorizontal: wp(8),
           borderRadius: wp(20),
-          marginBottom: wp(-14), // Adjusted marginBottom to make the gap smaller
           backgroundColor: 'blue',
         }}
       >
-        <Text style={{ fontSize: wp(6), textAlign: 'center', fontWeight: 'bold', color: 'white' }}>
-          Go Pro
+        <Text style={{ fontSize: wp(4), textAlign: 'center', fontWeight: 'bold', color: 'white' }}>
+          Go Pro (Unlimited Questions)
         </Text>
       </TouchableOpacity>
 
-      {/* start button */}
-      <TouchableOpacity
-        onPress={() => navigation.navigate('Home')}
-        style={{
-          marginHorizontal: wp(5),
-          paddingVertical: wp(4),
-          paddingHorizontal: wp(8),
-          borderRadius: wp(20),
-          backgroundColor: 'blue',
-        }}
-      >
-        <Text style={{ fontSize: wp(6), textAlign: 'center', fontWeight: 'bold', color: 'white' }}>
-          Get Started Free
-        </Text>
-      </TouchableOpacity>
     </SafeAreaView>
   );
 }
