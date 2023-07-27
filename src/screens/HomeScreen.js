@@ -146,9 +146,7 @@ const App = () => {
 
   return (
     <View className="flex-1 bg-white">
-      {/* <StatusBar barStyle="dark-content" /> */}
       <SafeAreaView className="flex-1 flex mx-5">
-        {/* bot icon */}
         <View className="flex-row justify-center">
           <Image  
               source={require('../../assets/images/bot.png')}

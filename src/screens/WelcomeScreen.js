@@ -1,36 +1,63 @@
-import { View, Text, SafeAreaView, Image, TouchableOpacity } from 'react-native'
-import React from 'react'
-import { useNavigation } from '@react-navigation/native'
-import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
+import { View, Text, SafeAreaView, Image, TouchableOpacity } from 'react-native';
+import React from 'react';
+import { useNavigation } from '@react-navigation/native';
+import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 
 export default function WelcomeScreen() {
-    const navigation = useNavigation();
+  const navigation = useNavigation();
+
   return (
-    <SafeAreaView className="flex-1 flex justify-around bg-white">
-        {/* title */}
-        <View className="space-y-2">
-            <Text style={{fontSize: wp(10)}} className="text-center font-bold text-accenttwo">
-                Cuddle
-            </Text>
-            <Text style={{fontSize: wp(4)}} className="text-center tracking-wider font-semibold text-accenttwo">
-                The AI Powered super nanny is here.
-            </Text>
-        </View>
-        
-        {/* assistant image */}
-        <View className="flex-row justify-center">
-            <Image  
-                source={require('../../assets/images/welcome.png')}
-                style={{height: wp(75), width: wp(75)}}
-            />
-        </View>
-        
-        {/* start button */}
-        <TouchableOpacity onPress={()=> navigation.navigate('Home')} className="bg-feature1 mx-5 p-4 rounded-2xl">
-            <Text style={{fontSize: wp(6)}} className="text-center font-bold text-white">
-                Get Started
-            </Text>
-        </TouchableOpacity>
+    <SafeAreaView style={{ flex: 1, justifyContent: 'space-around', backgroundColor: 'white' }}>
+      {/* title */}
+      <View>
+        <Text style={{ fontSize: wp(10), textAlign: 'center', fontWeight: 'bold', color: 'blue' }}>
+          Cuddle
+        </Text>
+        <Text style={{ fontSize: wp(4), textAlign: 'center', fontWeight: '600', color: 'blue' }}>
+          The AI Powered super nanny is here.
+        </Text>
+      </View>
+
+      {/* assistant image */}
+      <View style={{ flexDirection: 'row', justifyContent: 'center' }}>
+        <Image
+          source={require('../../assets/images/welcome.png')}
+          style={{ height: wp(75), width: wp(75) }}
+        />
+      </View>
+
+      {/* Go Premium */}
+      <TouchableOpacity
+        onPress={() => navigation.navigate('Home')}
+        style={{
+          marginHorizontal: wp(5),
+          paddingVertical: wp(4),
+          paddingHorizontal: wp(8),
+          borderRadius: wp(20),
+          marginBottom: wp(-14), // Adjusted marginBottom to make the gap smaller
+          backgroundColor: 'blue',
+        }}
+      >
+        <Text style={{ fontSize: wp(6), textAlign: 'center', fontWeight: 'bold', color: 'white' }}>
+          Go Pro
+        </Text>
+      </TouchableOpacity>
+
+      {/* start button */}
+      <TouchableOpacity
+        onPress={() => navigation.navigate('Home')}
+        style={{
+          marginHorizontal: wp(5),
+          paddingVertical: wp(4),
+          paddingHorizontal: wp(8),
+          borderRadius: wp(20),
+          backgroundColor: 'blue',
+        }}
+      >
+        <Text style={{ fontSize: wp(6), textAlign: 'center', fontWeight: 'bold', color: 'white' }}>
+          Get Started Free
+        </Text>
+      </TouchableOpacity>
     </SafeAreaView>
-  )
+  );
 }

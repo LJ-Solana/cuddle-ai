@@ -23,11 +23,12 @@ end
 
 target 'cuddle' do
   config = use_native_modules!
-
   # Flags change depending on the env values.
   flags = get_default_flags()
 
   use_react_native!(
+    # use_frameworks! :linkage => :static,
+    # $RNFirebaseAsStaticFramework = true,
     :path => config[:reactNativePath],
     # Hermes is now enabled by default. Disable by setting this flag to false.
     # Upcoming versions of React Native may rely on get_default_flags(), but
@@ -50,6 +51,8 @@ target 'cuddle' do
 
   post_install do |installer|
     react_native_post_install(
+      # use_frameworks! :linkage => :static,
+      # $RNFirebaseAsStaticFramework = true,
       installer,
       # Set `mac_catalyst_enabled` to `true` in order to apply patches
       # necessary for Mac Catalyst builds
