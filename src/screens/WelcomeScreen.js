@@ -36,7 +36,7 @@ export default function WelcomeScreen() {
           borderRadius: wp(20),
           marginBottom: wp(-20), 
           backgroundColor: 'blue',
-        }}
+        }} 
       >
         <Text style={{ fontSize: wp(4), textAlign: 'center', fontWeight: 'bold', color: 'white' }}>
           Get Started Free (10 Questions)
